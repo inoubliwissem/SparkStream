@@ -1,0 +1,30 @@
+program: WordCoun with Spark Framework in stream Mode
+
+
+Prerequisites:
+=========================================
+java JDK +7
+spark 1.5.0 Framework
+maven +2
+=========================================
+create our project with maven tool
+=========================================
+create project maven:
+mvn archetype:generate
+ -DgroupId=com.spark.app
+ -DartifactId=spark
+ -DarchetypeArtifactId=maven-archetype-quickstart
+ -DinteractiveMode=false
+build our project :
+  cd spark
+  mvn install
+============================================
+run our source of streming ... 
+in our example we use topic kafka...
+============================================
+============================================
+Steps to run this project
+============================================
+
+
+/home/../spark/bin/spark-submit --class com.spark.App arg1 arg2 --master local[2] taget/jar
